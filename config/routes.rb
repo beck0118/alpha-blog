@@ -4,4 +4,5 @@ root 'blog#home'
 get 'about', to:'blog#about'
 
 resources :articles
+#resouces の書き方は resources :コントローラ名？
 end
