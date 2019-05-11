@@ -1,2 +1,11 @@
+$navbar-default-bg:#CC99FF;
+
 @import "bootstrap-mincer";
 @import "bootstrap";
+
+#logo {
+    float: left;
+    font-size:1.7em;
+    color:rgb(0, 0, 0);
+    letter-spacing: -1px;
+}
