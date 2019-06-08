@@ -5,7 +5,7 @@ get 'about', to:'blog#about'
 
 resources :articles
 
-get 'signup', to: 'users#new'
-post 'users', to: 'users#create'
 
+get 'signup', to: 'users#new'
+resources :users, except: [:new]
 end
