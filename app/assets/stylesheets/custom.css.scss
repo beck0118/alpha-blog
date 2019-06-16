@@ -3,11 +3,17 @@ $navbar-default-bg:rgb(236, 236, 236);
 @import "bootstrap-mincer";
 @import "bootstrap";
 
+.background{
+    background-image: asset-url('home.jpg');
+    background-size:cover ;
+}
+
 #logo {
     float: left;
     font-size:1.7em;
-    color:rgb(0, 0, 0);
+    color:#eaeaea;
     letter-spacing: -1px;
+    padding: 6px;
 }
 
 .center{
@@ -15,13 +21,14 @@ $navbar-default-bg:rgb(236, 236, 236);
 }
 
 .jumbotron{
-    background-size:cover;
-    height:800px;
+    background: transparent ;
+    background-size: cover ;
+    height:1500px;
 }
 
 .jumbotron h1{
     font-size:100px ;
-    color:rgba(2, 2, 2, 0.596);
+    color:rgba(234, 233, 235, 0.596);
     margin: 20px;
 }
 
@@ -54,4 +61,8 @@ $navbar-default-bg:rgb(236, 236, 236);
 .listing{
     list-style: none;
     padding-left: 0;
+}
+
+.footer{
+    background: transparent;
 }

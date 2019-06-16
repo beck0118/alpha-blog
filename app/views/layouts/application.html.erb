@@ -10,10 +10,12 @@
   </head>
 
   <body>
+    <div class="background">
     <%= render 'layouts/navigation'%>
     <%= render 'layouts/messages'%>
     <div class="container">
       <%= yield %>
+    </div>
     </div>
     <%= render 'layouts/footer'%>
     <%= debug(params) if Rails.env.development? %>
