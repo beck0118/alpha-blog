@@ -15,11 +15,10 @@ def edit
 end
 
 def create
-    debugger
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-        flash[:success]="Your Heart will lead the world!!"
+        flash[:success]="また一つ新たな思いが世界に届けられました！！"
         redirect_to article_path(@article)
     else
         render 'new'
@@ -28,7 +27,7 @@ end
 
 def update
     if @article.update(article_params)
-        flash[:success]="Your Heart will take more power to the world!!"
+        flash[:success]="表現を更新しました。あなたの個性が磨かれました！！"
         redirect_to article_path(@article)
     else
         render 'edit'
@@ -40,7 +39,7 @@ end
 
 def destroy
     @article.destroy
-    flash[:danger] = "Your Heart is Awakening now!!"
+    flash[:danger] = "削除されました。消えた思いもいつか届けれる日が来ます"
     redirect_to articles_path
 end
 
