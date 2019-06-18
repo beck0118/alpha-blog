@@ -3,6 +3,9 @@ $navbar-default-bg:rgb(236, 236, 236);
 @import "bootstrap-mincer";
 @import "bootstrap";
 
+@import 'slick';
+@import 'slick-theme';
+
 .background{
     background-image: asset-url('home.jpg');
     background-size:cover ;
@@ -65,4 +68,26 @@ $navbar-default-bg:rgb(236, 236, 236);
 
 .footer{
     background: transparent;
+}
+
+
+.top__slide--01{
+    height: 300px ;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+.top__slide--02{
+    height: 200px ;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+
+.top__slide--03{
+    height: 200px ;
+    text-align: center;
+    font-size: 10px;
+    color: white;
 }
