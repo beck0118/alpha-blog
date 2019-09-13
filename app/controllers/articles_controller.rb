@@ -53,7 +53,7 @@ private
     end
 
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user and !current_user.admin?
         flash[:danger] = "編集権限がありません"
         redirect_to root_path
       end
