@@ -1,9 +1,12 @@
 <h1 align="center">投稿一覧</h1>
-
+<% @a.each do |a| %>
+<%= a.title%>
+<% end %>
 <div align="center">
   <%= will_paginate %>
 </div>
 <%= render 'article', obj: @articles %>
 <div align="center">
   <%= will_paginate %>
+
 </div>
