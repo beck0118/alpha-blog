@@ -1,0 +1,21 @@
+<% @slides.each do |slide| %>
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="well well-lg">
+                <ul class="slider">
+                    <div class="article-title">
+                    <%= link_to slide.title, article_path(slide) %>
+                    </div>
+                    <div class="article-body">
+                    <%= truncate(slide.description, length: 300)%>
+                    <div class="article-meta-details">
+                    <small>crated by: <%= slide.user.username if slide.user%>,
+                            <%= time_ago_in_words(slide.created_at)%> ago,
+                            last updated: <%= time_ago_in_words(slide.updated_at)%> ago</small>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+<% end %>

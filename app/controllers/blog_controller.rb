@@ -1,7 +1,7 @@
 class BlogController < ApplicationController
 
 def home
-  redirect_to articles_path if logged_in?
+  @slides=Article.order("random()").limit(4)
 end
 
 def about

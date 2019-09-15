@@ -5,7 +5,7 @@ before_action :require_same_user, only:[:edit, :update, :destroy]
 
 def index
     @articles = Article.paginate(page: params[:page], per_page: 5)
-    @a= Article.order("random()").limit(2)
+    @slides= Article.order("random()").limit(2)
     
 end
 
